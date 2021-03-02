@@ -106,12 +106,20 @@
     <Content Include="js\tab.js" />
     <Content Include="js\tooltip.js" />
     <Content Include="js\transition.js" />
-    <Content Include="Login\login.html" />
+    <Content Include="Login\login.aspx" />
     <Content Include="Style\bootstrap-theme.css" />
     <Content Include="Style\bootstrap.css" />
+    <Content Include="Style\signin.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Login\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
